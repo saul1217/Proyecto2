@@ -1,5 +1,13 @@
 import './Style.css';
-export const Buscador = (onSubmit, valorInput, onChange) => {
+export const Buscador = (valorInput, onChange) => {
+
+    const onSubmit = async (evento) =>{
+        evento.preventDefault()
+        const gifs =await getGifs(valorInput)
+        console.log(gifs)
+    }
+    
+    
     return (
         <>
         <form onSubmit={onSubmit}>

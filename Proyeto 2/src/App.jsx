@@ -14,12 +14,13 @@ function App() {
     setValorInput(valor);
   }
 
-  const getGifs = async () => {
-    const url = 'https://api.giphy.com/v1/gifs/search?api_key=puoAHOcYjckOvMJ5uPn5AoqrtNEpcREX&q=';
+  const getGifs = async (query) => {
+    const url =   `https://api.giphy.com/v1/gifs/search?api_key=puoAHOcYjckOvMJ5uPn5AoqrtNEpcREX&q= ${query}`;
     const respone = await fetch(url);
     const data = await respone.json();
-    console.log(data);
+    return data.data;
   }
+
 
 
   getGifs();

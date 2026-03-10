@@ -5,7 +5,7 @@ import { Buscador } from "./Components/Buscador";
 
 function App() {
 
-  const [valorInput, setValorInput] = useState('hola');
+  const [valorInput, setValorInput] = useState('');
   const [gifs, setGifs] = useState();
 
 
@@ -15,21 +15,19 @@ function App() {
   }
 
   const getGifs = async (query) => {
-    const url =   `https://api.giphy.com/v1/gifs/search?api_key=puoAHOcYjckOvMJ5uPn5AoqrtNEpcREX&q= ${query}`;
+    const url =   `https://api.giphy.com/v1/gifs/search?api_key=puoAHOcYjckOvMJ5uPn5AoqrtNEpcREX&q=${query}`;
     const respone = await fetch(url);
     const data = await respone.json();
     return data.data;
   }
 
 
-
-  getGifs();
-
   return (
   <>  
   <Buscador
   valorInput={valorInput}
   onChange={onChange}
+  onSubmit={getGifs}
   />
   </>
   ) 

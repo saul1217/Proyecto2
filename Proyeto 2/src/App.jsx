@@ -1,16 +1,25 @@
+import { useState } from "react";
 import "./App.css";
 import { Buscador } from "./Components/Buscador";
 
- const onSubmit = async (evento) => {
-    evento.preventDefault()
-    const gifs = await getGifs(valorInput)
-    setGifs(gifs)
-  }
+
 function App() {
+
+  const [valorInput, setValorInput] = useState('hola');
+  const [gifs, setGifs] = useState();
+
+  
+  const onChange = (evento) => {
+    const valor = evento.target.value;
+    setValorInput(valor);
+  }
 
   return (
   <>  
-  <Buscador/>
+  <Buscador
+  valorInput={valorInput}
+  onChange={onChange}
+  />
   </>
   ) 
 }

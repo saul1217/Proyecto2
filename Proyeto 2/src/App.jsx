@@ -38,7 +38,7 @@ function App() {
   />
 
   <GridGifs gifs={gifs}/>
- 
+    
   </>
   ) 
 }

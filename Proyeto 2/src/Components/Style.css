@@ -3,9 +3,13 @@ body{
 }
 
 .form-buscador{
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 .buscador{
+    border-radius: 16px;
+    text-align: center;
     background-color: white;
     padding: 0px 0px .2rem #ffff;
     border: none;
@@ -17,7 +21,7 @@ body{
     max-width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    margin: 5px;
+    margin-bottom: 15px;
 }
 
 .contenedor-gifs{

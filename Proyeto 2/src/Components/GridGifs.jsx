@@ -1,4 +1,6 @@
 import { Gif } from "./Gif"
+import './Style.css'
+
 export const GridGifs = ({gifs}) =>{
     return(
     <>

@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./App.css";
 import { Buscador } from "./Components/Buscador";
 import { GridGifs } from "./Components/GridGifs";
+import './Components/Style.css'
 
 
 function App() {

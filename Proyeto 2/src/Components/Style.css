@@ -1,3 +1,21 @@
+body{
+    background-color: #1e1e1e;
+}
+
+.form-buscador{
+    text-align: center;
+}
 .buscador{
     background-color: white;
+    padding: 0px 0px .2rem #ffff;
+    border: none;
 }
+
+.gif{
+    border-radius: 10px;
+    width: 300px;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+}
+
+

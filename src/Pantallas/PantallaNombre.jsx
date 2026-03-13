@@ -12,12 +12,31 @@ export const PantallaNombre = () => {
 
     const manejarSubmit = async (e) =>{
         e.preventDefault();
-        if(nombre.trim === '') return;
+        if (nombre.trim().length === 0) return;
 
-        const palabrasRandom = palabras[Math.floor(Math.random() * palabras.length)];
-        const url =`https://api.giphy.com/v1/gifs/search?api_key=puoAHOcYjckOvMJ5uPn5AoqrtNEpcREX&q=${palabrasRandom}&limit=4`;
+        const shhh = {
+            "saul": "chris bumstead",         
+            "pedro": "trans",     
+            "kikin": "trans",      
+            "juan": "trans",
+            "leo" : "trans",
+            "kaleb" : "trans",
+            "kira" :"trans",  
+            "chris" : "homosexual",
+            "enrique" : "homosexual",
+            "jesus enrique" : "homosexual",
+            "brandon" : "trans",        
+        };
+        const nombreLimpio = nombre.toLowerCase().trim();
+        let palabraParaBuscar = "";
+        if (shhh[nombreLimpio]) {
+            palabraParaBuscar = shhh[nombreLimpio];
+        } else {
+            palabraParaBuscar = palabras[Math.floor(Math.random() * palabras.length)];
+        }
 
-
+        const url =`https://api.giphy.com/v1/gifs/search?api_key=puoAHOcYjckOvMJ5uPn5AoqrtNEpcREX&q=${palabraParaBuscar}&limit=4`;
+       
         try{
             const resp = await fetch(url);
             const {data} = await resp.json();

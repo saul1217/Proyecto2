@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import { Footer } from "./Footer";
 
 const palabras = [
     "gay", "homosexual", "crazy", "handsome", "chris bumstead", "toji fus", "lloron",
@@ -36,6 +37,7 @@ export const PantallaNombre = () => {
                 <button type="submit" className="bg-blue-700 text-white hover:bg-blue-900 rounded-full text-xl p-2 ">Continuar</button>
             </form>
         </div>
+        <Footer/>
         </>
     )
 }

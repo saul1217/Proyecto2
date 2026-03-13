@@ -1,3 +1,4 @@
+import { Footer } from "../Pantallas/Footer"
 import { Gif } from "./Gif"
 import './Style.css'
 

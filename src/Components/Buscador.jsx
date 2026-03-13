@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import './Style.css';
+import { Footer } from '../Pantallas/Footer';
 export const Buscador = ({onSubmit, valorInput, onChange}) => {
     const navigate = useNavigate();
     return (

@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import '../Components/Style.css'
+import { Footer } from "./Footer";
 export const PantallaResultado = () => {
   const location = useLocation();
   const navigate = useNavigate()
@@ -33,6 +34,7 @@ export const PantallaResultado = () => {
       </div>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

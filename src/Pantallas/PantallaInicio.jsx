@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 import 'tailwindcss'
+import { Footer } from "./Footer";
 
 export const PantallaInicio = () =>{
     const navigate = useNavigate();
@@ -12,6 +13,7 @@ export const PantallaInicio = () =>{
                 Descubre el gif que te define segun tu nombre 
             </button>
         </div>
+        <Footer></Footer>
         </>
     )
 }

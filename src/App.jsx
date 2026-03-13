@@ -4,6 +4,7 @@ import './Components/Style.css'
 import { UseSearchGifs } from "./Components/UseSearchGifs";
 import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import { PantallaInicio } from "./Pantallas/PantallaInicio";
+import { PantallaNombre } from "./Pantallas/PantallaNombre";
 
 function App() {
   const{valorInput,onChange, onSubmit, gifs} = UseSearchGifs();
@@ -14,7 +15,8 @@ function App() {
   <>  
   <Router>
     <Routes>
-      <Route path="/" element={<PantallaInicio />} />      
+      <Route path="/" element={<PantallaInicio />} /> 
+      <Route path="Ingresa_nombre" element={<PantallaNombre/>} />     
     </Routes>
   </Router>
   </>

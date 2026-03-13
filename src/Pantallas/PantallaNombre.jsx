@@ -14,13 +14,13 @@ export const PantallaNombre = () => {
         if(nombre.trim === '') return;
 
         const palabrasRandom = palabras[Math.floor(Math.random() * palabras.length)];
-        const url =`https://api.giphy.com/v1/gifs/search?api_key=puoAHOcYjckOvMJ5uPn5AoqrtNEpcREX&q=${palabrasRandom}&limit=1`;
+        const url =`https://api.giphy.com/v1/gifs/search?api_key=puoAHOcYjckOvMJ5uPn5AoqrtNEpcREX&q=${palabrasRandom}&limit=3`;
 
 
         try{
             const resp = await fetch(url);
             const {data} = await resp.json();
-            const gifData = data.length > 0 ? data[0] : null;
+            const gifData = data.length > 0 ? data : null;
 
             navigate('resultado', {state: {nombre: nombre, gifAleatorio: gifData}});
         }catch (error){

@@ -19,7 +19,7 @@ export const PantallaResultado = () => {
             key={gif.id} 
             src={gif.images.original.url} 
             alt={gif.title} 
-            className="gif "/>
+            className="w-full aspect-square object-cover rounded-xl shadow-lg transition-transform hover:scale-105 "/>
           ))
         ) : (
           <p className="text-xl mb-8 text-white"> Buscando tu gif...</p>

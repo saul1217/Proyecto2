@@ -7,7 +7,7 @@ export const Gif = ({gif}) => {
     return(
         <>{
             <img 
-            class="gif transition-transform duration-300 hover:scale-105 hover:rotate-2 cursor-pointer"
+            className="gif transition-transform duration-300 hover:scale-105 hover:rotate-2 cursor-pointer"
             src={gif.images.original.url} 
             alt={gif.title} 
             /> 

@@ -19,15 +19,16 @@ export const UseSearchGifs = () =>{
   }
         
   const onSubmit = async (evento) => {
+  console.log("sssssss");
   evento.preventDefault();
   const gifs = await getGifs(valorInput);
   setGifs(gifs);
   }
 
   return{
-    onSubmit, 
-    onChange,
     valorInput,
+    onChange,
+    onSubmit,
     gifs
   }
 }

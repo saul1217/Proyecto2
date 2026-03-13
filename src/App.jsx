@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from
 import { PantallaInicio } from "./Pantallas/PantallaInicio";
 import { PantallaNombre } from "./Pantallas/PantallaNombre";
 import { PantallaResultado } from "./Pantallas/PantallaResultado";
+import { PantallaBuscador } from "./Pantallas/PantallaBuscador";
 
 function App() {
   const{valorInput,onChange, onSubmit, gifs} = UseSearchGifs();
@@ -13,12 +14,13 @@ function App() {
 
 
   return (
-  <>  
+  <>  <PantallaBuscador/>
   <Router>
     <Routes>
-      <Route path="/" element={<PantallaInicio />} /> 
+      <Route path="/s" element={<PantallaInicio />} /> 
       <Route path="Ingresa_nombre" element={<PantallaNombre/>} />     
       <Route path="Ingresa_nombre/resultado" element={<PantallaResultado/>} /> 
+      <Route path="buscador" element={<Buscador/>}/>
     </Routes>
   </Router>
   </>

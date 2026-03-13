@@ -8,8 +8,16 @@ export const PantallaResultado = () => {
   return(
     <>
     <div>
-      <h1 className="text-white">Este es el gif que mas se acerca a tu personalidad {nombre}</h1>
-      <img src={gifAleatorio.images.original.url} alt={gifAleatorio.title} /> 
+      <h1 className="text-white">Este es el gif que más te define{nombre}</h1>
+      {gifAleatorio ? (
+      <img src={gifAleatorio.images.original.url} alt={gifAleatorio.title} />) : (
+        <p className="text-xl mb-8 text-white"> Buscando tu gif...</p>
+      ) }
+
+      <div>
+        <p>No te gusto el gif? puedes buscar más</p>
+        <button onClick={'/buscador'}>Buscar mas gifs</button>
+      </div>
       </div>
     </>
   )

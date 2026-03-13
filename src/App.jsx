@@ -14,10 +14,10 @@ function App() {
 
 
   return (
-  <>  <PantallaBuscador/>
+  <>  
   <Router>
     <Routes>
-      <Route path="/s" element={<PantallaInicio />} /> 
+      <Route path="/" element={<PantallaInicio />} /> 
       <Route path="Ingresa_nombre" element={<PantallaNombre/>} />     
       <Route path="Ingresa_nombre/resultado" element={<PantallaResultado/>} /> 
       <Route path="buscador" element={<Buscador/>}/>

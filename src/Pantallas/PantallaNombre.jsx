@@ -14,7 +14,7 @@ export const PantallaNombre = () => {
         if(nombre.trim === '') return;
 
         const palabrasRandom = palabras[Math.floor(Math.random() * palabras.length)];
-        const url =`https://api.giphy.com/v1/gifs/search?api_key=puoAHOcYjckOvMJ5uPn5AoqrtNEpcREX&q=${palabrasRandom}&limit=3`;
+        const url =`https://api.giphy.com/v1/gifs/search?api_key=puoAHOcYjckOvMJ5uPn5AoqrtNEpcREX&q=${palabrasRandom}&limit=4`;
 
 
         try{

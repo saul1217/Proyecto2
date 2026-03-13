@@ -32,3 +32,12 @@ body{
     justify-content: space-evenly;
 }
 
+.contenedor-resultado-gifs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px; 
+  justify-content: center;
+  width: 100%;
+  max-width: 1000px; 
+  margin: 0 auto; 
+}

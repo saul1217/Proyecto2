@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import './Style.css';
 export const Buscador = ({onSubmit, valorInput, onChange}) => {
-
+    const navigate = useNavigate();
     return (
+        
         <> 
         <div className="w-full relative flex justify-center items-center py-5">
             <form onSubmit={onSubmit} className='text-center'>

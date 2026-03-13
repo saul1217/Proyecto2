@@ -3,6 +3,7 @@ import { GridGifs } from "./Components/GridGifs";
 import './Components/Style.css'
 import { UseSearchGifs } from "./Components/UseSearchGifs";
 import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import { PantallaInicio } from "./Pantallas/PantallaInicio";
 
 function App() {
   const{valorInput,onChange, onSubmit, gifs} = UseSearchGifs();
@@ -11,14 +12,11 @@ function App() {
 
   return (
   <>  
-  <Buscador
-  valorInput={valorInput}
-  onChange={onChange}
-  onSubmit={onSubmit}
-  />
-
-  <GridGifs gifs={gifs}/>
-    
+  <Router>
+    <Routes>
+      <Route path="/" element={<PantallaInicio />} />      
+    </Routes>
+  </Router>
   </>
   ) 
 }

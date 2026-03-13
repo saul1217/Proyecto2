@@ -33,7 +33,7 @@ export const PantallaNombre = () => {
             <h2 className="text-3xl mb-6">Ingresa tu nombre</h2>
             <form onSubmit={manejarSubmit} className="flex flex-col items-center gap-8">
                 <input value={nombre} onChange={(e) =>setNombre(e.target.value) } className="bg-white rounded-xl text-black text-center" type="text" placeholder="Ingresa tu nombre"/>
-                <button type="submit" className="bg-sky-500 hover:bg-sky-700 text-3xl pl-5 pr-5 text-white rounded-xl transition-all">Continuar</button>
+                <button type="submit" className="bg-blue-700 text-white transition-all rounded-full text-xl p-2 ">Continuar</button>
             </form>
         </div>
         </>

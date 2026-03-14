@@ -11,7 +11,7 @@ export const PantallaResultado = () => {
     <>
     <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-r from-violet-800 to-slate-600 text-white p-4">
       <div className="flex flex-col items-center w-full max-w-6xl">
-      <h1 className="text-4xl text-whitemb-20 font-black p-8 rounded-full">Este es el gif que más te define {nombre}</h1>
+      <h1 className="text-4xl text-whitemb-20 font-black p-8 rounded-full">Estos son los gifs que más te define {nombre}</h1>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 w-full max-w-sm md:max-w-5xl mb-10 px-2 " >
 
         {gifAleatorio && gifAleatorio.length > 0 ? (

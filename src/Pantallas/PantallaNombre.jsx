@@ -25,7 +25,9 @@ export const PantallaNombre = () => {
             "chris" : "homosexual",
             "enrique" : "homosexual",
             "jesus enrique" : "homosexual",
-            "brandon" : "trans",        
+            "brandon" : "trans",
+            "magio" : "harry pot",
+            "bart"  : "bart simpson"      
         };
         const nombreLimpio = nombre.toLowerCase().trim();
         let palabraParaBuscar = "";
